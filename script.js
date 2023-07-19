@@ -41,6 +41,7 @@ function validateEntry () {
 
 function makeGrid () {
     if (validateEntry()) {
+        resetGrid(true);
         let gridSize = userChoice.value;
         let gridElementSize = 500 / gridSize - 2;
         for (i = 0; i < (gridSize * gridSize); i++) {
@@ -52,5 +53,13 @@ function makeGrid () {
             console.log(gridElementSize);
         }
     }
+}
 
+function resetGrid (){
+    if (true) {
+       const gridElement = document.querySelectorAll('.grid-element')
+       gridElement.forEach(div => {
+        div.remove();
+       });
+    }
 }
