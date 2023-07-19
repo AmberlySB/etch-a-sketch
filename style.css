@@ -46,6 +46,7 @@ input {
     font-size: 14px;
     color: green;
     margin: 0;
+    width: 260px;
 }
 
 #hint.error {
@@ -58,7 +59,11 @@ input {
     flex-wrap: wrap;
     height: 500px;
     width: 500px;
-    background-color: white;
+    background-color: lightgray;
+    border-radius: 2%;
+    border-style: solid;
+    border-color: gray;
+    border-width: 10px;
     margin: 5vh 5vw;
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
 }
@@ -66,7 +71,7 @@ input {
 .grid-element {
     display: flex;
     flex: 1, 1, 0;
-    border: 1px solid black;
+    border: 1px solid white;
     /*height: 29.25px;
     width: 29.25px;*/
 }

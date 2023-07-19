@@ -1,7 +1,6 @@
 //Get user input to determine grid size
 //Add event listener to text box and submit buttons
 
-
 const grid = document.getElementById('grid');
 const userChoice = document.getElementById('user-choice');
 const hintText = document.getElementById('hint');
@@ -11,6 +10,7 @@ const submitButton = document.getElementById('submit-button');
 userChoice.addEventListener('focus', hint);
 userChoice.addEventListener('keyup', byNumber);
 submitButton.addEventListener('click', makeGrid);
+submitButton.click();
 
 function hint() {
     hintText.textContent = "Enter a number between 16 and 100";
