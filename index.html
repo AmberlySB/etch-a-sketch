@@ -9,7 +9,18 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <div id="controls"></div>
-    <div id="grid"></div>
+    <div id="container">
+        <div id="header"><h1>Etch A Sketch</h1></div>
+        <div id="main">
+            <div id="controls">
+                <button>Color Mode</button>
+                <button>Rainbow Mode</button>
+                <button>Clear</button>
+                <p class="range-text">Grid size: 16 x 16</p>
+                <input id="myRange" class="slider" type="range" min="16" max="96" value="16" step="16" oninput="update()">
+            </div>
+            <div id="grid"></div>
+            </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,42 @@
+body {
+    background-color: #F5F5F5;
+}
+
+button {
+    margin: 10px;
+    border-radius: 30px;
+    border: solid black;
+    height: 50px;
+    min-width: 150px;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#grid {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    min-height: 300px;
+    max-height: 500px;
+    min-width: 300px;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    margin: 5vh 5vw;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+}
