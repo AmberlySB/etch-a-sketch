@@ -16,8 +16,13 @@
                 <button>Color Mode</button>
                 <button>Rainbow Mode</button>
                 <button>Clear</button>
-                <p class="range-text">Grid size: 16 x 16</p>
-                <input id="myRange" class="slider" type="range" min="16" max="96" value="16" step="16" oninput="update()">
+                <div id="user-input">
+                    <p>Grid Size: </p>
+                    <input type="text" id="user-choice">
+                    <p = id="grid-text"></p>
+                </div>
+                <p id="hint"></p>
+
             </div>
             <div id="grid"></div>
             </div>

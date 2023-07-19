@@ -10,6 +10,12 @@ button {
     min-width: 150px;
 }
 
+input {
+    width: 30px;
+    height: 20px;
+    margin-left: 5px;
+}
+
 #header {
     display: flex;
     justify-content: center;
@@ -27,16 +33,35 @@ button {
     justify-content: center;
 }
 
+#user-input {
+    display: flex;
+    align-items: center;
+}
+
+#user-choice {
+    margin-right: 5px;
+}
+
+#hint {
+    font-size: 14px;
+    color: red;
+    margin: 0;
+}
+
 #grid {
     display: flex;
-    flex: 1 1 auto;
     align-items: center;
-    min-height: 300px;
-    max-height: 500px;
-    min-width: 300px;
-    max-width: 500px;
-    aspect-ratio: 1 / 1;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+
     background-color: white;
     margin: 5vh 5vw;
     box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+}
+
+.grid-element {
+    display: flex;
+    flex: 1;
+    border: 1px solid black;
 }
