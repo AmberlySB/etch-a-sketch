@@ -1,13 +1,29 @@
 body {
     background-color: #F5F5F5;
+    font-family: 'Exo';
+}
+
+h1{
+    font-size: 70px;
+    margin-bottom: 20px;
 }
 
 button {
-    margin: 10px;
+    margin: 5px;
     border-radius: 30px;
     border: solid black;
     height: 50px;
-    min-width: 150px;
+    width: 100px;
+    font-family: 'Exo';
+    font-size: 20px;
+}
+
+.black-button {
+    background-color: black;
+}
+
+.rainbow-button {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 
 input {
@@ -31,6 +47,8 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #user-input {
@@ -71,11 +89,7 @@ input {
 .grid-element {
     display: flex;
     flex: 1, 1, 0;
-    border: 1px solid white;
+    border: 0 solid white;
     /*height: 29.25px;
     width: 29.25px;*/
-}
-
-.black {
-    background-color: black;
 }
