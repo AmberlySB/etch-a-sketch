@@ -7,10 +7,13 @@ const hintText = document.getElementById('hint');
 const gridText = document.getElementById('grid-text');
 const submitButton = document.getElementById('submit-button');
 
+
+
 userChoice.addEventListener('focus', hint);
 userChoice.addEventListener('keyup', byNumber);
 submitButton.addEventListener('click', makeGrid);
 submitButton.click();
+grid.addEventListener('click', activatePen);
 
 function hint() {
     hintText.textContent = "Enter a number between 16 and 100";
@@ -49,8 +52,8 @@ function makeGrid () {
             makeDiv.classList.add('grid-element');
             makeDiv.style.width = `${gridElementSize}px`;
             makeDiv.style.height = `${gridElementSize}px`;
+            //gridSelector.addEventListener('mouseover', colorGrid);
             grid.appendChild(makeDiv);
-            console.log(gridElementSize);
         }
     }
 }
@@ -62,4 +65,15 @@ function resetGrid (){
         div.remove();
        });
     }
+}
+
+function activatePen() {
+    let gridCells = document.getElementsByClassName('grid-element');
+    for (i = 0; i < gridCells.length; i++) {
+        gridCells[i].addEventListener('mouseover', colorGrid);
+    }
+}
+
+function colorGrid () {
+    this.classList.add('black');
 }
